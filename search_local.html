@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Orrie </title>
+	<link rel="stylesheet" type="text/css" href="css/search.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<div class="conteiner">
+		<nav class="nav">
+			<div id="logo" onclick="window.open('index.html', '_self')">
+				<div id="Head"> Orrie </div>
+				<div id="subHead"> Online Restaurant Review</div>
+			</div>
+
+			<div class="menu">
+				<a href="index.html" class="active"><i class="fas fa-home"></i> Home </a>
+				<a href="conta.html"><i class="fas fa-user"></i> Conta </a>
+				<a href="definition.html"><i class="fas fa-cogs"></i> Definições </a>
+				<a href="login.html" onclick="if (confirm('Deseja sair?')) window.open('login.html','_self'); return false"> <i class="fas fa-sign-in-alt"></i> Sair </a>			
+			</div>
+		</nav> 
+		
+		<div class="search"> 
+			<h1> PROCURAR RESTAURANTES </h1>
+
+			<div class="searchbox">
+				<input type="search" name="procurar" placeholder="Procure um restaurante ou uma localização..." value="" id="search" onchange="search()" onfocus="this.value=''">
+				<button onclick="funtion()"><i class="fas fa-search"></i> Procurar </button>
+			</div>
+		</div>
+
+		<div id="result">
+		<h2 id="resultado"> Resultado correspondente a 'alecrim'</h2>
+		<hr id="line1">
+			<div class="result1" id="y">
+				<a id="link" href="restaurants/geral/pizzart.html"> 
+					<img id="i_atual" src="images/restaurantes/pizzart.jpg"> 
+
+				</a>
+				<a id="link1" href="restaurants/geral/pizzart.html"> 
+					<p id="n_atual">Pizza Art</p> 
+					<p id="l_atual">Localização:  Chã de Alecrim</p>
+					<div class="icons">
+						<i id="s1" class="fas fa-star"></i>
+						<i id="s2" class="fas fa-star"></i>
+						<i id="s3" class="fas fa-star"></i>
+						<i id="s4" class="fas fa-star"></i>
+						<i id="s5" class="far fa-star"></i>
+						<span id="total"> (123)</span>
+					</div>
+					
+					<p id="r_atual">Rate 4/5</p>
+				</a>	
+			</div>
+			<hr>
+			<div class="result1" id="x">
+			
+				<a id="link2" href="#"> 
+					<img id="i_next" src="images/restaurantes/mindel.jpg"> 
+
+				</a>
+				<a id="link3" href="#"> 
+					<p id="n_next"></p> 
+					<p id="l_next"></p>
+					<div class="icons">
+						<i id="sn1" class="fas fa-star"></i>
+						<i id="sn2" class="fas fa-star"></i>
+						<i id="sn3" class="fas fa-star"></i>
+						<i id="sn4" class="fas fa-star"></i>
+						<i id="sn5" class="far fa-star"></i>
+						<span id="totaln"> (244)</span>
+					</div>
+					
+					<p id="r_next"></p>
+				</a>	
+			</div> 
+		<hr id="line2" style="display: none;">
+		
+		<h2>Outros restaurantes </h2>
+			<div class="outros"> 
+			<div id="outros1">
+				<a href="restaurants/geral/pizzart.html"> 
+					<img src="images/restaurantes/pizzart.jpg"> 
+				</a>
+				<a href="restaurants/geral/pizzart.html"> 
+					<div>Pizza Art</div> 
+					<div>Localização: Chã de Alecrim</div>
+					<div class="icons">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<span> (123)</span>
+					</div>
+					<p>Rate 5/5</p>
+				</a>	
+			</div>
+			<div id="outros1">
+				<a href="restaurants/geral/caravela.html"> 
+					<img src="images/restaurantes/caravela.jpg"> 
+				</a>
+				<a href="restaurants/geral/caravela.html"> 
+					<p>Caravela</p> 
+					<p>Localização: Laginha</p>
+					<div class="icons">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="far fa-star"></i>
+						<i class="far fa-star"></i>
+						<span> (123)</span>
+					</div>
+					<p>Rate 3/5</p>
+				</a>	
+			</div>
+			<div id="outros1">
+				<a href="restaurants/geral/martini.html"> 
+					<img src="images/restaurantes/martini.jpg"> 
+				</a>
+				<a href="restaurants/geral/martini.html"> 
+					<p>Martini Sunset</p> 
+					<p>Localização: Santa Filomena</p>
+					<div class="icons">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="far fa-star"></i>
+						<i class="far fa-star"></i>
+						<i class="far fa-star"></i>
+						<span> (123)</span>
+					</div>
+					<p>Rate 4.5/5</p>
+				</a>	
+			</div>
+			<div id="outros1">
+				<a href="restaurants/geral/mindel.html"> 
+					<img src="images/restaurantes/mindel.jpg"> 
+				</a>
+				<a href="restaurants/geral/mindel.html"> 
+					<p>Mindel Hotel</p> 
+					<p>Localização: Avenida Marginal</p>
+					<div class="icons">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star-half-alt"></i>
+						<i class="far fa-star"></i>
+						<span> (123)</span>
+					</div>
+					<p>Rate 3.4/5</p>
+				</a>	
+			</div>
+			<div id="outros1">
+				<a href="d_geral.html"> 
+					<img src="images/restaurantes/usabor.jpg"> 
+				</a>
+				<a href="d_geral.html"> 
+					<p>U Sabor</p> 
+					<p>Localização: Laginha</p>
+					<div class="icons">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star-half-alt"></i>						
+						<i class="far fa-star"></i>
+						<span> (234)</span>
+					</div>
+					<p>Rate 3.5/5</p>
+				</a>	
+			</div>
+		</div>
+		</div>
+	</div>
+    
+    <script src="/js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
+
+</body>
+</html>

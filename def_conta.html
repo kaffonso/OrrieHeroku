@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Orrie </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/def.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+</head>
+<body>	
+		<nav class="nav">
+			<div class="logo" onclick="window.open('index.html', '_self')">
+				<p class="Head"> Orrie </p>
+				<p class="subHead"> Online Restaurant Review</p>
+			</div>
+
+			<div class="menu">
+				<a href="index.html"><i class="fas fa-home"></i> Home </a>
+				<a href="conta.html"><i class="fas fa-user"></i> Conta </a>
+				<a href="definition.html" class="active"><i class="fas fa-cogs"></i> Definições </a>
+				<a href="login.html" onclick="if (confirm('Deseja sair?')) window.open('login.html', '_self'); return false"> <i class="fas fa-sign-in-alt"></i> Sair </a>
+			</div>
+		</nav> 
+
+	<div class="conteiner">
+
+		<div class="titulo">
+			<p class="voltar" onclick="window.open('definition.html','_self')"> VOLTAR </p>
+			<p class="big-t"> GERIR CONTA </p>
+		</div>
+
+		<div class="btns">
+			<p class="t-btns">Informações Pessoais</p>
+			<hr>
+			<button class="botao" title="alterar o seu nome" onclick="show_changename()"> Nome </button>
+				<div class="change_name" id="cn">
+					<form method="GET">
+						<p class="t-alterar">Alterar o Nome</p><hr class="hr-black">
+						<label> Novo nome</label><br>
+						<input class="input-alterar" type="text" name="name" id="id_name" placeholder="Digite o seu novo nome">
+						<button class="btn-alterar" type="submit" onclick="verify_n()">Alterar</button>
+					</form>
+				</div>
+			<button class="botao" title="alterar o sua morada" onclick="show_changeplace()"> Morada </button>
+				<div class="change_place" id="cp">
+				<form method="GET" >
+					<p class="t-alterar"> Alterar o Morada</p><hr class="hr-black">
+					<label> Nova morada </label><br>
+					<input class="input-alterar" type="text" name="place" id="id_place" placeholder="Digite a sua nova morada">
+					<button class="btn-alterar" onclick="verify_place()" type="submit">Alterar</button>
+				</form>
+				</div>
+			<p class="t-btns" >Segurança</p>
+			<hr>
+			<button class="botao" title="alterar o sua password" onclick="show_changepassword()"> Password </button>
+				<div class="change_password" id="cpsw">
+				<form method="GET">
+					<p class="t-alterar"> Alterar o Password</p><hr class="hr-black">
+					<label> Nova password</label><br>
+					<input class="input-alterar" id="senha1" type="password" name="psw" placeholder="Digite a sua nova password"><br>
+					<label> Repita a password</label><br>
+					<input class="input-alterar" id="senha2" type="password" name="psw" placeholder="Digite a sua nova password novamente">
+					<button class="btn-alterar" onclick="verify_pwd()" type="submit"> Alterar </button><br>
+					<input type="checkbox" onclick="mostrar()"><labe> Mostrar password</label>
+				</form>
+				</div>
+			
+		</div>
+	</div>
+	<script src="/js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/showpsw.js"></script>
+	<script type="text/javascript">
+		function show_changename(){
+			var x = document.getElementById("cn").style.display
+
+			if (x==="none"){
+				document.getElementById("cn").style.display="block"
+			}else{
+				document.getElementById("cn").style.display="none"
+			}
+		}
+		
+		function show_changeplace(){
+			var x = document.getElementById("cp").style.display
+
+			if (x==="none"){
+				document.getElementById("cp").style.display="block"
+			}else{
+				document.getElementById("cp").style.display="none"
+			}
+		}
+		
+		function show_changepassword(){
+			var x = document.getElementById("cpsw").style.display
+
+			if (x==="none"){
+				document.getElementById("cpsw").style.display="block"
+			}else{
+				document.getElementById("cpsw").style.display="none"
+			}
+		}
+
+		function verify_n(){
+			x = document.getElementById("id_name").value
+			if(x===""){
+				alert("Por favor preencha o campo!")
+			}else{
+				alert("Nome alterado com sucesso!")
+			}
+		}
+
+		function verify_place(){
+			x = document.getElementById("id_place").value
+			if(x===""){
+				alert("Por favor preencha o campo!")
+			}else{
+				alert("Morada alterada com sucesso!")
+			}
+		}
+
+		function verify_pwd(){
+			x = document.getElementById("senha1").value
+			y = document.getElementById("senha2").value
+
+			if(x==="" || y===""){
+				alert("Por favor preencha todos os campos!")
+			}else if(x!==y){
+				alert("Password diferentes! Certifique se colocou as passwords iguais!")
+			}else{
+				alert("Password alterada com sucesso!")
+			}
+		}
+
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+body{
+	width: 100%;
+	margin: 0;
+	font-family: futura;
+	line-height: 1.5;
+	background-color:white;
+	user-select: none;
+	-webkit-user-select: none; }
+
+.search{
+	background-image: url(../images/bg.png);
+	text-align: left;
+	width: 100%;
+	top: 0;
+	position: -webkit-sticky;
+	overflow: scroll;
+	color: white;
+	overflow: none;
+	font-family: futura;
+	padding-bottom: 20px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.1);}
+
+	.search h1{
+		margin-left: 50px;
+		letter-spacing: 3px;
+		font-size: 3em;
+		margin-bottom: 10px;
+		margin-top: 60px; }
+
+	.searchbox input, button{
+		margin: 0px;
+		height: 40px;
+		border: 0px;
+		border-radius: 15px; }
+
+		.searchbox input{
+			margin-left: 50px;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-family: futura;
+			outline: none;
+			width: 450px;
+			border-bottom-right-radius: 0px;
+			border-top-right-radius: 0px;
+			font-size: 14px; }
+	
+		.searchbox button{
+			font-family: futura;
+			width: 100px;
+			padding-right: 10px;
+			margin-left: -6px;
+			background-color: rgba(180, 9, 9, 0.4);
+			border: 1px solid white;
+			-webkit-backdrop-filter: blur(1rem);
+			color: white;
+			border-bottom-left-radius: 0px;
+			border-top-left-radius: 0px;
+			font-size: 14px; }
+
+	#result{
+	color:rgb(36, 35, 35);
+	width: 100%;
+	padding-top: 0px;
+	padding-bottom: 73px;
+	text-align: left; }
+
+		#result h2{
+			margin-left: 50px;
+			font-size: 1.5em;}
+		
+		#result a,p{
+			text-align: left;
+			color: black;
+			text-decoration: none;
+			margin: 0;
+			margin-left: 10px;}	
+
+		.icons{
+			margin-left: 10px;}
+
+	.result1{
+			display: flex;
+			align-items: center;	}
+		
+		.result1 img{
+				border-radius: 15px;
+				margin-left: 50px;
+				width: 150px;
+				height: 150px;
+				box-shadow: 0.5px 0.5px 6px rgb(194, 189, 189); }
+
+		.result1 p{
+				text-align: left;
+				margin-left: 10px;}
+
+	#x{
+					display: none;}
+			
+	hr{
+		border: 0.5px solid grey;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		width:93%;}
+	
+	#outros1{
+			padding-top: 0px;
+			padding-bottom: 30px;
+			border-right: 1px solid grey;}
+
+		#outros1:last-child{
+				border-right: none;}
+		
+		#outros1 img{
+				border-radius: 15px;
+				margin-left: 1px;
+				width: 150px;
+				height: 150px;
+				box-shadow: 0.5px 0.5px 6px rgb(194, 189, 189); 
+				transition: 0.5s}
+
+		#outros1 a, p{
+			text-align: center;
+			color: black;
+			text-decoration: none;
+			margin: 0;
+			margin-left: 50px;}
+		
+		#outros1 p{
+			margin-left: 0px;}
+	
+	.outros{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;}
+
+		#outros1 img:hover{
+			transform: scaleX(1.05) scaleY(1.05);
+			transition: 0.5s;}
+
+

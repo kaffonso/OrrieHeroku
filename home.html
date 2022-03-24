@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Orrie </title>
+	<script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="conteiner">
+		<nav class="nav">
+			<div id="logo">
+				<div id="Head"> Orrie </div>
+				<div id="subHead"> Online Restaurant Review </div>
+			</div>
+
+			<div class="menu">
+				<a href="index.html" class="active"><i class="fas fa-home"></i> Home </a>
+				<a href="conta.html"><i class="fas fa-user"></i> Conta </a>
+				<a href="definition.html"><i class="fas fa-cogs"></i> Definições </a>
+				<a href="login.html" onclick="if (confirm('Deseja sair?')) window.open('login.html', '_self'); return false"> <i class="fas fa-sign-in-alt"></i> Sair </a>
+			</div>
+		</nav> 
+		
+		<div class="search"> 
+			<h1> PROCURAR RESTAURANTES </h1>
+
+			<div class="searchbox">
+				<input type="search" name="procurar" placeholder="Procure um restaurante ou uma localização..." value="" id="search" onchange="openPage()" title="pesquise alecrim ou mindel">
+				<button><i class="fas fa-search"></i> Procurar </button>
+			</div>
+		</div>
+		<div class="destaques">
+
+			<h2> DESTAQUES </h2>
+
+			<div class="dest-box">	
+				<div class="box">
+					<a href="restaurants/geral/pizzart.html"> 
+						<p> Pizza & Art </p> 
+						<img src="images/restaurantes/pizzart.jpg">
+						<p class="rate">Rate 4.5/5</p> 
+					</a>			
+				</div>
+
+				<div class="box">
+					<a href="restaurants/geral/mindel.html"> 
+						<p>Mindel Hotel</p> 
+						<img src="images/restaurantes/mindel.jpg">
+						<p class="rate">Rate 4.5/5</p> 
+					</a>			
+				</div>
+				<div class="box">
+					<a href="restaurants/geral/martini.html"> 
+						<p>Martini Sunset</p> 
+						<img src="images/restaurantes/martini.jpg">
+						<p class="rate">Rate 4.2/5</p> 
+					</a>			
+				</div>
+				<div class="box">
+					<a href="restaurants/geral/caravela.html"> 
+						<p> Caravela</p> 
+						<img src="images/restaurantes/caravela.jpg">
+						<p class="rate">Rate 4.4/5</p> 
+					</a>			
+				</div>
+				<div class="box">
+					<a href="#"> 
+						<p> Usabor </p> 
+						<img src="images/restaurantes/usabor.jpg">
+						<p class="rate">Rate 4/5</p> 
+					</a>			
+				</div>
+			</div>
+		</div>
+		<footer class="rodape">
+			<div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+			<ul class="roda">
+				<li><a href="#">Sobre</a></li>
+				<li><a href="#">Politica e Privacidade</a></li>
+				<li><a href="help.html">Ajuda</a></li>
+			</ul>
+			<p class="copyright">Orrie © 2021</p>
+	</footer>
+	</div>
+
+
+    <script src="jquery-3.5.1.min.js">
+      
+    </script>
+	<script type="text/javascript">
+		function openPage(){
+			var x = document.getElementById("search").value;
+			x = x.toLowerCase();
+
+			if (x === "mindel") {
+				window.open("search.html","_self");
+
+			}else if(x==="alecrim"){
+				window.open("search_local.html","_self");
+			
+			}else{
+				alert("Restaurante ou localidade não encontrado!")
+				window.open("index.html","_self");
+			};
+		};
+	</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+nav{ 
+	display: flex;
+	font-family: futura;
+	-webkit-backdrop-filter: blur(0.5rem);
+	justify-content: space-between;
+	position: fixed;
+	overflow: hidden;
+	top: 0px;
+	height: 53px;
+	color: white; 
+	width: 100%;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.589);
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.521); }
+
+	.menu{
+		margin-right: 10%; }
+
+		.menu a{
+			float: left;
+			padding: 14.5px 15px 12px 15px;
+			margin: 0px 0.9px;
+			text-decoration: none;
+			color: white;
+			transition:0.3s; }
+		
+			.menu a:hover{
+				background-color: rgba(0, 0, 0, 0.48);
+				transition: 0.1s;
+				padding-bottom: 12px; 
+				border-bottom: 3px solid white;
+				transform: scaleX(1.05)}
+
+			.active{
+				background:rgba(0, 0, 0, 0.35);
+				-webkit-backdrop-filter: blur(1rem);
+				border-bottom: 3px solid white;}
+
+	#logo, .logo{
+		margin-left: 10%;
+		cursor: pointer;
+		padding: 0px 5px 0px 15px;}
+
+		.Head, #Head{
+			height: 35px;
+			font-size: 30px;
+			margin:0px; }
+
+		.subHead, #subHead{
+			font-size: 6px; 
+			margin: 0px 0px 0px 1px;
+			letter-spacing: 0.1px; }
+	
+
+	

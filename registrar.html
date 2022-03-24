@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <title> Orrie </title>
+    <link rel="stylesheet" href="css/registrar.css">
+</head>
+<body>
+    <div class="conteiner">
+       
+        <div class="caixa">
+            <div class="titulo">
+                <h3>REGISTRAR</h3>
+                <hr class="line">
+            </div>
+
+            <div class="credenciais">
+                <label> Nome </label>
+                <input id="name" type="text" name="name" placeholder="Digite o primeiro nome" title="Digite o primeiro nome" required> 
+                <label> Apelido </label>
+                <input id="lname" type="text" name="lname" placeholder="Digite o apelido" title="Digite o apelido" required>
+                <label> Morada </label>
+                <input id="place" type="text" name="place" placeholder="Digite sua Morada" title="Digite sua morada" required>
+                <label> Data de Nascimento </label>
+                <input id="data" type="date"  placeholder="dd/mm/aaaa" required>
+                <label> Email </label>
+                <input type="email" name="email" placeholder="Digite o seu Email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+                <label> Password </label>
+                <input id="senha1" type="password" name="senha" placeholder="Digite o seu Password"required ">
+                <label> Repita o Password </label>
+                <input id="senha2" type="password" name="senha" placeholder="Repita o Password"required '"><br>
+            </div>
+
+            <div class="t-mostrar">
+                <label>Mostrar password</label>
+                <input type="checkbox" onclick="mostrar()">
+            </div>
+
+            <p>Ao criar uma conta, você concorda com nossos <a href="#"> Termos e Privacidade. </a></p> 
+            
+            <div class="btns">
+                <button type="submit" class="voltar" onclick="window.open('login.html','_self');">Voltar</button>
+                <button type="submit" class="registrar" onclick="verificar()"> Registrar</button>  
+            </div>
+        </div>
+
+        <div class="b-title">
+            <h1> ORRIE </h1>
+            <p>Online Restaurant Reviews</p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/showpsw.js"></script>
+    <script>
+        function verificar(){
+            var psw = document.getElementById("senha1").value;
+            var pswc = document.getElementById("senha2").value;
+            var n = document.getElementById("name").value;
+            var ln = document.getElementById("lname").value;
+            var place = document.getElementById("place").value;
+            var data = document.getElementById("data").value;
+
+            if(n === "" || ln === "" || place === "" || data === ""){
+                alert('Por favor preencha todos os campos!')
+                return 0;
+            }
+
+            if (psw === pswc){
+                alert('Registro feito com sucesso!')
+                window.open("login.html","_self");
+            } else {
+                alert('Password diferentes! Certifique se colocou as passwords iguais!');
+            }
+        }
+    
+    </script>
+</body>
+</html>

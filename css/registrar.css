@@ -1,0 +1,148 @@
+body{
+    background-image: url("../images/bg.png");
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: futura;}
+
+.conteiner{
+    display: flex;
+    color: white;
+    width: 100%; }
+
+    .caixa{
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        float: left;
+        box-shadow: 1px 1px 5px #cccccc ;
+        background-color: white;
+        margin: 0px;
+        padding: 30px;
+        border-radius: 20px;
+        width: 356px;
+        margin-top: 6%; 
+        margin-left: 10%;
+        margin-right: 1%;}
+    
+    .caixa p,a{
+            font-weight: none;
+            color: black;
+            font-size: 11px;
+            text-align: center;}
+    
+    .caixa .titulo{
+            text-align: center;
+            color: black; }
+                    
+        .titulo h3{
+        letter-spacing: 2px;
+        margin-bottom: 10px; }
+
+            .line{
+                border: 0.5px solid grey;
+                margin-top: 0px;
+                width: 50%;}
+
+        .credenciais{
+            margin-bottom: 10px; }
+
+            .credenciais > label{
+                font-family: futura;
+                font-size: 15px;
+                padding-left: 5px;
+                margin-top: 7px;
+                margin-bottom: 5px;
+                color: black;
+                display: block; }
+
+            .credenciais > input{
+        padding: 2px 10px;
+        padding-right: 8px;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        outline: 0;
+        width: 94%;
+        height: 25px; }
+
+                #name,#lname,#place{
+                    text-transform: capitalize;
+                }
+                
+        .t-mostrar{
+        font-family: futura;
+        color: black;
+        font-size: 12px;
+        display: block;
+        margin: 5px 0px 10px 230px;}
+
+        .btns .registrar{
+            font-family: futura;
+            float: right;
+            background-color:teal;
+            width: 20%;
+            border: 0px;
+            font-size: 12px;
+            border-radius: 10px;
+            padding: 5px;
+            color: white;
+            outline: 0;
+            margin-top: 10px;
+            cursor: pointer; }
+
+        .btns .voltar{
+            font-family: futura;
+            float: left;
+            background-image: linear-gradient(to right, #c11e1e, rgb(160, 40, 40) );
+            width: 20%;
+            border-radius: 10px;
+            font-size: 12px;
+            padding: 5px;
+            color: white;
+            border: 0px;
+            outline: 0;
+            margin-top: 10px; 
+            cursor: pointer;}
+
+            .voltar:hover{
+                background-image: linear-gradient(to right, #c11e1e, rgb(140, 13, 13) ); }
+
+    .b-title{
+        cursor:default;
+        user-select: none;
+        -webkit-user-select: none;
+        padding-top: 18%;
+        color: white;
+        vertical-align: middle;
+        margin-left: 99.5px; }
+
+        .b-title h1,p{
+            margin: 0px;}
+
+        .b-title h1{
+            height: 170px;
+            font-size: 10em;}
+
+        .b-title p{
+            font-size: 1.3em;
+            letter-spacing: 10px;
+            padding-left: 18px;}
+
+    @media(max-width: 920px){
+        .conteiner{
+            display:grid;
+            grid-template-columns: 1fr;} 
+        
+        .caixa{
+            margin-left: 25%;
+            width: 356px;
+            transition: 0.5s}}
+
+    @media(max-width: 800px){
+        .conteiner{
+            display:grid;
+            grid-template-columns: 1fr;} 
+        
+        .caixa{
+            margin-left: 15%;
+            width: 356px;
+            transition: 0.5s}}
+   

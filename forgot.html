@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+    <title> Orrie </title>
+    <link rel="stylesheet" href="css/forgot.css">
+</head>
+<body>
+    <div class="container">
+         <div class="caixa">
+            <div class="titulo">
+                <img src="" alt="">
+                <h3> RECUPERAR PASSWORD</h3>
+                <hr class="line">
+            </div>
+            
+            <div class="texto">
+                <p> Para recuperar o seu password, por favor insira o seu email, será enviada uma mensagem para recuperares o password da conta.</p>
+            </div>
+            
+            <div class="credenciais">
+                <label> Email </label>
+                <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="btns">
+                <button type="submit" class="enviar" onclick="verify()">Enviar</button>
+                <button type="button" class="voltar" onclick="window.open('login.html','_self')">Voltar</button>
+            </div>               
+        </div>
+        
+        <div class="b-title">
+            <h1> ORRIE </h1>
+            <p>Online Restaurant Reviews</p>
+        </div>
+    </div>
+    <script type="text/javascript"> </script> 
+    <script>
+        function verify(){
+            x=document.getElementById("email").value
+            if(x===""){
+                alert("Por favor preencha o campo!")
+                return 0;
+            }else{
+                alert("Foi enviado uma mensagem para o seu email ("+x+")!")
+                window.open("login.html","_self");
+            }
+        }
+    </script> 
+</body>
+</html>

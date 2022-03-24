@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Orrie </title>
+	<link rel="stylesheet" type="text/css" href="../../css/d_rate.css">
+	<link rel="stylesheet" type="text/css" href="../../css/nav.css">
+	<link rel="stylesheet" type="text/css" href="../../css/starability-all.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="conteiner">
+		<nav class="nav">
+			<div class="logo" onclick="window.open('../../index.html', '_self')">
+				<p class="Head"> Orrie </p>
+				<p class="subHead"> Online Restaurant Review</p>
+
+			</div>
+
+			<div class="menu">
+				<a href="../../index.html"><i class="fas fa-home"></i> Home </a>
+				<a href="../../conta.html"><i class="fas fa-user"></i> Conta </a>
+				<a href="../../definition.html"><i class="fas fa-cogs"></i> Definições </a>
+				<a href="../../login.html" onclick="if (confirm('Deseja sair?')) window.open('../../login.html','_self'); return false"> <i class="fas fa-sign-in-alt"></i> Sair </a>			
+			</div>
+		</nav>
+
+		<div class="titulo">
+			<h2> CARAVELA </h2>
+		</div>
+
+		<div class="buttons">
+			<a href="../geral/caravela.html">Geral</a>
+			<a href="../pratos/caravela.html">Pratos</a>
+			<a href="../rates/caravela.html">Avaliações</a>
+		</div>
+
+		<div class="content">
+			<div class="box-avaliar">
+				<div class="atual">
+					<img src="../../images/restaurantes/caravela.jpg">
+					<div class="icons">
+						<i id="s1" class="fas fa-star"></i>
+						<i id="s2" class="fas fa-star"></i>
+						<i id="s3" class="fas fa-star"></i>
+   						<i id="s4" class="fas fa-star"></i>
+						<i id="s5" class="far fa-star"></i>
+						<span id="atual">(123)</span>
+					</div>
+				</div>
+				<div class="avaliar">
+					<h3>AVALIAR O RESTAURANTE</h3>
+					<hr>
+						<fieldset class="starability-checkmark" id="rates" >
+							<input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
+					  
+							<input type="radio" id="rate1" name="rating" value="1" />
+							<label for="rate1">1 star.</label>
+					  
+							<input type="radio" id="rate2" name="rating" value="2" />
+							<label for="rate2">2 stars.</label>
+					  
+							<input type="radio" id="rate3" name="rating" value="3" />
+							<label for="rate3">3 stars.</label>
+					  
+							<input type="radio" id="rate4" name="rating" value="4" />
+							<label for="rate4">4 stars.</label>
+					  
+							<input type="radio" id="rate5" name="rating" value="5" />
+							<label for="rate5">5 stars.</label>
+
+							<span id="stars-total"> </span>
+					  
+							<span class="starability-focus-ring"></span>
+						  </fieldset>
+					<div>
+						<textarea rows="4" cols="125" placeholder="Diga o porquê da avaliação que deste (opcional)" id="cmt" onfocus="this.value=''"></textarea><br>
+						<button onclick="check()"> Submeter Avaliação </button>
+					</div>
+
+					
+				</div>
+			</div>
+
+			<hr id="line2">
+
+			<div class="comentarios" >
+				<h3 class="titulo-comentario">COMENTÁRIOS</h3>
+				
+				<hr class="c">
+				
+				<div class="comentario" id="new_comment">
+					<div class="user"><i class="fas fa-user"></i> Novo Usuário <span> | avaliou com ( <span id="stars"> </span>) estrelas |</span></div>
+					<div class="comment" id="cmt2"> </div>
+				</div>
+				
+				<hr id="line">
+			
+				<div class="comentario">
+					<div class="user"><i class="fas fa-user"></i> Odair Santos <span> | avaliou com ( <span class="estrelas"> <i id="s1" class="fas fa-star"></i>
+																						<i id="s2" class="fas fa-star"></i>
+																						<i id="s3" class="fas fa-star"></i>
+																						<i id="s4" class="fas fa-star"></i>
+																						<i id="s5" class="far fa-star"></i></span>) estrelas |</span></div>
+					<div class="comment">Gostei muito do restaurante, tudo perfeito!</div>
+				</div>
+
+				<hr>
+
+				<div class="comentario">
+					<div class="user" ><i class="fas fa-user"></i> Joana Gonçalves <span> | avaliou com (<span class="estrelas"> <i id="s1" class="fas fa-star"></i>
+																						<i id="s2" class="fas fa-star"></i>
+																						<i id="s3" class="fas fa-star"></i>
+																						<i id="s4" class="fas fa-star"></i>
+																						<i id="s5" class="far fa-star"></i></span>) estrelas |</span></div>
+					<div class="comment" >Em relação a recepção dou nota 10m tudo muito excelentem e todos os funcionarios de la são respeitosos. Excelente.</div>
+				</div>		
+			</div>
+		</div>
+	 
+	</div>
+	<script src="../../js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="../../js/check.js"></script>
+
+</body>
+</html>

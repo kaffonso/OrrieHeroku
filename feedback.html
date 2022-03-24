@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Orrie </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/def.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+</head>
+<body>	
+		<nav class="nav">
+			<div class="logo" onclick="window.open('index.html', '_self')">
+				<p class="Head"> Orrie </p>
+				<p class="subHead"> Online Restaurant Review</p>
+			</div>
+
+			<div class="menu">
+				<a href="index.html"><i class="fas fa-home"></i> Home </a>
+				<a href="conta.html"><i class="fas fa-user"></i> Conta </a>
+				<a href="definition.html" class="active"><i class="fas fa-cogs"></i> Definições </a>
+				<a href="login.html" onclick="if (confirm('Deseja sair?')) window.open('login.html', '_self'); return false"> <i class="fas fa-sign-in-alt"></i> Sair </a>
+			</div>
+		</nav> 
+
+	<div class="conteiner">
+		<div class="titulo">
+			<p class="voltar"onclick="window.open('definition.html','_self')" > VOLTAR </p>
+			<p class="big-t"> FEEDBACK </p>
+		</div>
+
+		<div class="feedback">
+			<form method="GET">
+				<textarea rows="20" cols="120" placeholder="Escreva um feedback sobre o site"></textarea><br>
+				<button class="feedback-btn" type="submit" onclick="alert('Obrigado(a) pelo feedback!')"> Submeter Feedback</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

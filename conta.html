@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Orrie </title>
+	<link rel="stylesheet" type="text/css" href="css/conta.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="conteiner">
+		<nav class="nav">
+			<div id="logo" onclick="window.open('index.html','_self')">
+				<div id="Head"> Orrie </div>
+				<div id="subHead"> Online Restaurant Review</div>
+
+			</div>
+
+			<div class="menu">
+				<a href="index.html"><i class="fas fa-home"></i> Home </a>
+				<a href="conta.html" class="active"><i class="fas fa-user"></i> Conta </a>
+				<a href="definition.html"><i class="fas fa-cogs"></i> Definições </a>
+				<a href="login.html" onclick="if (confirm('Deseja sair?')) window.open('login.html', '_self'); return false"> <i class="fas fa-sign-in-alt"></i> Sair </a>
+			</div>
+		</nav>
+
+		<div class="content">
+			<div class="bg">
+
+			</div>
+			<div class="header">
+				<div class="profile-pic">
+					<img src="images/profile.jpg">
+				</div>
+				<div class="profile-name">
+					<p>FIRSTNAME LASTNAME</p>
+					<div class="morada">Vive em Laginha - São Vicente</div>
+					<hr>
+				</div>
+			</div>
+
+			<div class="rest-fav">
+				<h3> RESTAURANTES FAVORITOS </h3>
+				<hr class="line">
+				<p class="no-fav" id="no-fav">Nenhum restaurante adicionado aos favoritos!</p>
+				<div class="favs"> 
+					<div class="fav" id="fav1">
+						<a href="restaurants/geral/mindel.html"> 
+							<img src="images/restaurantes/mindel.jpg"> 
+						</a>
+						<a href="restaurants/geral/mindel.html"> 
+							<div>Mindel Hotel</div> 
+							<div class="icons">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<span> (123)</span>
+							</div>
+							<p>Rate 5/5</p>
+						</a>
+						<button class="remove" title="Remover dos favoritos" onclick="remove1()">X</button>	
+					</div>
+					<div class="fav" id="fav2">
+						<a href="restaurants/geral/pizzart.html"> 
+							<img src="images/restaurantes/pizzart.jpg"> 
+						</a>
+						<a href="restaurants/geral/pizzart.html"> 
+							<p>Pizza Art</p> 
+							<div class="icons">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+								<span> (123)</span>
+							</div>
+							<p>Rate 3/5</p>
+						</a>
+						<button class="remove2" id="rm2" title="Remover dos favoritos" onclick="remove2()">X</button>	
+				</div>
+			</div>
+
+			<div class="rest-close">
+				<h3> RESTAURANTES PERTO DA SUA MORADA (LAGINHA) </h3>
+				<hr class="line">
+				<div class="closes"> 
+					<div class="close">
+						<a href="#"> 
+							<img src="images/restaurantes/usabor.jpg"> 
+						</a>
+						<a href="#"> 
+							<div>Usabor</div> 
+							<div class="icons">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<span> (123)</span>
+							</div>
+							<p>Rate 5/5</p>
+						</a>		
+					</div>
+
+
+					<div class="close">
+						<a href="restaurants/geral/caravela.html"> 
+							<img src="images/restaurantes/caravela.jpg"> 
+						</a>
+						<a href="#"> 
+							<p>Caravela</p> 
+							<div class="icons">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+								<span> (123)</span>
+							</div>
+							<p>Rate 3/5</p>
+						</a>	
+				</div>
+			</div>
+		</div>
+			
+	</div>
+	<script src="/js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/remove-fav.js"></script>
+</body>
+</html>

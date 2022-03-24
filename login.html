@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+    <title>Login</title>
+    <link rel="icon" href="/images/login.png">
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+<body>
+    <div class="container">
+         <div class="caixa">
+            <div class="titulo">
+                <img src="images/login.png" alt="">
+                <h3> LOGIN </h3>
+                <hr class="line">
+            </div>
+            <div class="credenciais">
+                <label for="email"> Email </label>
+                <input id="email" type="text" name="email" placeholder="Digite seu email" required="required" title="Insira o email">
+
+                <label for="psw"> Password </label>
+                <input id="senha1" type="password" name="psw" placeholder="Digite seu password" title="Insira o password">
+                <div class="mostrar">   
+                    <label> Mostrar password </label>
+                    <input type="checkbox" onclick="mostrar()">
+                </div>
+            </div>
+
+            <div class="btns">
+                
+                <p class="lemb">
+                    <label><input checked="checked" type="checkbox"/> Lembre-me</label>
+                </p>
+                <button type="submit" class="registrar" onclick="window.open('registrar.html','_self')">Registrar</button>
+                <button type="submit" class="esqueceu" onclick="window.open('forgot.html','_self')">Esqueceu o password?</button>
+                
+            </div>               
+            <div class="btns-login">
+                <button type="submit" id="login" value="" onclick="verificar()"> Iniciar Sessão</button>
+            </div>
+        </div>
+        <div class="b-title">
+            <h1> ORRIE </h1>
+            <p>Online Restaurant Reviews</p>
+        </div>
+    </div>
+    <script type="text/javascript"> </script>  
+    <script type="text/javascript" src="js/showpsw.js"></script>
+    <script>
+        function verificar(){
+           var email = document.getElementById("email").value;
+           var psw = document.getElementById("senha1").value;
+
+           if(email === "" || psw === ""){
+               alert('Por favor preencha todos os campos!')
+               
+           }else if(email === "teste" && psw === "teste"){
+               window.open("index.html","_self")
+
+           }else{
+               alert('Credenciais inválidas')
+               window.open("login.html","_self")
+           }
+        }
+        
+    </script>
+</body>
+</html>
